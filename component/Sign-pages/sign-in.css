@@ -1,0 +1,126 @@
+/* Start Sign In Section */
+.sign-in {
+  height: 100vh;
+  background-image: url(../../image/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #131720;
+  .box {
+    background-color: #131720;
+    padding: 50px 30px;
+    border: 1px solid #151f30;
+    border-radius: 20px;
+    min-width: 31%;
+    @media (max-width: 991px) {
+    }
+    .image {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #151f30;
+      border-radius: 10px;
+      border: none;
+      &:focus {
+        background-color: #151f30;
+        outline: 1px solid #2f80ed;
+      }
+      &::placeholder {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #ffffff;
+      }
+    }
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    input[type="submit"] {
+      background-color: #2f80ed;
+      color: #ffffff;
+      width: 100%;
+      transition: 0.3s;
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 15px;
+      margin-bottom: 10px;
+      &:hover {
+        background-color: #ffffff;
+        color: #151f30;
+      }
+    }
+    p {
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .icon {
+      margin-bottom: 25px;
+      i {
+        width: 30%;
+        padding: 15px 20px;
+        color: #ffffff;
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+        &.fa-facebook-f {
+          background-color: #3b5999;
+          &:hover {
+            background-color: #ffffff;
+            color: #3b5999;
+          }
+        }
+        &.fa-twitter {
+          background-color: #1da1f2;
+          &:hover {
+            background-color: #ffffff;
+            color: #1da1f2;
+          }
+        }
+        &.fa-google {
+          background-color: #df4a32;
+          &:hover {
+            background-color: #ffffff;
+            color: #df4a32;
+          }
+        }
+      }
+    }
+    span {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    a {
+      color: #2f80ed;
+      transition: 0.3s;
+      font-size: 14px;
+      text-transform: capitalize;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h1 {
+      font-size: 130px;
+      font-weight: 500;
+      color: #2f80ed;
+    }
+    .text-not-found {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* End Sign In Section */
