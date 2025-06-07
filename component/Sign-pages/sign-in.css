@@ -1,6 +1,6 @@
 /* Start Sign In Section */
 .sign-in {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../../image/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
