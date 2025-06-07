@@ -6,9 +6,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #131720;
-  @media (max-width: 767px) {
-    height: 90vh;
-  }
   .box {
     background-color: #131720;
     padding: 50px 30px;
