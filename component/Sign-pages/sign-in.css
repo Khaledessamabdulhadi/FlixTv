@@ -5,14 +5,17 @@
   background-size: cover;
   background-position: center;
   background-color: #131720;
+  @media (max-width: 767px) {
+    height: 95vh;
+  }
   .box {
     background-color: #131720;
     padding: 50px 30px;
     border: 1px solid #151f30;
     border-radius: 20px;
-    min-width: 31%;
-    @media (max-width: 991px) {
-      min-width: 50%;
+    min-width: 35%;
+    @media (max-width: 767px) {
+      min-width: 80%;
       padding: 30px 15px;
     }
     .image {
