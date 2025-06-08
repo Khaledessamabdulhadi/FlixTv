@@ -1,0 +1,305 @@
+body {
+  background-color: #131720;
+  color: #ffffff;
+}
+/* Start SideBar Section */
+.offcanvas {
+  background-color: #131720;
+  .offcanvas-header {
+    border-bottom: 1px solid #151f30;
+    .offcanvas-logo {
+      padding: 15px 20px;
+      i {
+        background-color: #151f30;
+        padding: 13px;
+        border-radius: 10px;
+        font-size: 14px;
+        color: #2f80ed;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: #131720;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  .offcanvas-body {
+    .user-info {
+      padding: 15px 20px;
+      border-bottom: 1px solid #151f30;
+      .user-info-text {
+        img {
+          width: 35px;
+          border-radius: 10px;
+          margin-right: 8px;
+        }
+        span {
+          font-size: 13px;
+          font-weight: 400;
+        }
+        i {
+          background-color: #151f30;
+          padding: 13px;
+          border-radius: 10px;
+          font-size: 14px;
+          color: #2f80ed;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            color: #131720;
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+    .pages-list {
+      padding: 20px;
+      ul {
+        li {
+          margin-bottom: 18px;
+          a {
+            color: #ffffff;
+            font-size: 15px;
+            transition: 0.3s;
+            font-weight: normal;
+            text-transform: capitalize;
+            i {
+              font-size: 14px;
+              margin-right: 10px;
+            }
+            &:hover,
+            &.active {
+              color: #2f80ed;
+            }
+          }
+        }
+      }
+      .dropdown-menu {
+        background-color: #151f30;
+        min-width: 250px;
+        border-radius: 10px;
+        li {
+          margin-bottom: 8px;
+          .dropdown-item {
+            font-size: 14px;
+            text-transform: capitalize;
+            span {
+              display: block;
+              margin-bottom: 10px;
+            }
+          }
+          &:hover a {
+            color: #2f80ed;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .header-footer {
+      padding: 20px;
+      h6 {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      span {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        span {
+          margin-left: 10px;
+          text-transform: uppercase;
+          color: #2f80ed;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+/* End SideBar Section */
+/* Start Catalog Page Section */
+.catalog-page {
+  padding: 20px;
+  .add-items {
+    padding: 20px 0;
+    border-bottom: 1px solid #151f30;
+    h2 {
+      font-weight: 500;
+      text-transform: capitalize;
+      font-size: 25px;
+    }
+    .link-items {
+      padding: 12px 30px;
+      background-color: #2f80ed;
+      color: #ffffff;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+      &:hover {
+        background-color: #ffffff;
+        color: #131720;
+      }
+    }
+    i {
+      background-color: #151f30;
+      padding: 13px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #2f80ed;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: #131720;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .info-page {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(47 128 237 / 10%);
+    .right-text {
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-right: 10px;
+        @media (max-width: 580px) {
+          font-size: 18px;
+        }
+      }
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        color: #626262;
+        margin-top: 5px;
+        @media (max-width: 580px) {
+          display: none;
+        }
+      }
+    }
+    .left-text {
+      .text {
+        @media (max-width: 767px) {
+          display: none;
+        }
+        margin-right: 80px;
+        span {
+          font-size: 14px;
+          text-transform: capitalize;
+          margin-bottom: 0px;
+        }
+        .icon {
+          padding: 0;
+          i {
+            color: #2f80ed;
+            margin-left: 10px;
+          }
+        }
+      }
+      .input {
+        position: relative;
+        input {
+          background-color: #151f30;
+          padding: 8px;
+          border: none;
+          width: 100%;
+          border-radius: 20px;
+          &::placeholder {
+            font-size: 12px;
+            color: #ffffff;
+            text-transform: capitalize;
+            font-weight: 500;
+            padding-left: 10px;
+          }
+        }
+        i {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #2f80ed;
+        }
+      }
+    }
+  }
+}
+.catalog-table {
+  padding: 20px;
+  width: 100%;
+  overflow-x: scroll;
+  table {
+    width: 100%;
+    overflow-x: auto;
+    tr {
+      background-color: #151f30;
+      border-radius: 50px;
+      th {
+        background-color: #131720;
+        padding: 25px 10px;
+        font-size: 14px;
+        text-transform: capitalize;
+        min-width: 100px;
+      }
+      td {
+        padding: 20px 10px;
+        border-bottom: 10px solid #131720;
+        font-size: 14px;
+        text-transform: capitalize;
+        min-width: 100px;
+        i {
+          color: #2f80ed;
+          margin-right: 5px;
+        }
+        &.green {
+          color: #29b474;
+          font-weight: 500;
+        }
+        &.red {
+          color: #eb5757;
+          font-weight: 500;
+        }
+        .fa-lock,
+        .fa-eye,
+        .fa-pen,
+        .fa-trash-alt {
+          padding: 8px;
+          border-radius: 8px;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        .fa-lock {
+          color: #29b474;
+          background-color: rgba(41, 180, 116, 0.1);
+          &:hover {
+            background-color: rgba(41, 180, 116, 0.3);
+          }
+        }
+        .fa-eye {
+          color: #ffc312;
+          background-color: rgba(255, 195, 18, 0.1);
+          &:hover {
+            background-color: rgba(255, 195, 18, 0.3);
+          }
+        }
+        .fa-pen {
+          color: #2f80ed;
+          background-color: rgba(47, 128, 237, 0.1);
+          &:hover {
+            background-color: rgba(47, 128, 237, 0.3);
+          }
+        }
+        .fa-trash-alt {
+          color: #eb5757;
+          background-color: rgba(235, 87, 87, 0.1);
+          &:hover {
+            background-color: rgba(235, 87, 87, 0.3);
+          }
+        }
+      }
+    }
+  }
+}
+/* End Catalog Page Section */
