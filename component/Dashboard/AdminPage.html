@@ -166,8 +166,8 @@
     <div class="admin-page">
       <div class="add-items d-flex justify-content-between align-items-center">
         <h2>dashboard</h2>
-        <div class="icon">
-          <a href="#" class="link-items me-3">add items</a>
+        <div class="icon d-flex justify-content-between">
+          <a href="#" class="link-items me-3 d-none d-md-block">add items</a>
           <i
             class="fa-solid fa-bars-staggered"
             data-bs-toggle="offcanvas"
@@ -222,296 +222,314 @@
           </div>
         </div>
       </div>
-      <div class="row pt-4 pb-4">
-        <div class="box col-xl-6 mb-4">
-          <div class="table-stats">
-            <div class="info-stats">
-              <div
-                class="all-info-stats d-flex align-items-center justify-content-between"
-              >
-                <div class="text d-flex align-items-center">
-                  <i class="fas fa-qrcode"></i>
-                  <h5>top rated</h5>
-                </div>
-                <div class="icon d-flex align-items-center">
-                  <i class="fa-solid fa-arrow-rotate-right"></i>
-                  <a href="#">view all</a>
+      <div class="box-table">
+        <div class="row">
+          <div class="items col-12 col-lg-6">
+            <div class="items-padding">
+              <div class="box-info">
+                <div
+                  class="col d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <span>top items</span>
+                  </div>
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href="#">view all</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="account-table">
-              <table>
-                <tr>
-                  <th>id</th>
-                  <th>title</th>
-                  <th>category</th>
-                  <th>rating</th>
-                </tr>
-                <tr>
-                  <td>321</td>
-                  <td>I Dream in Another Language</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.2</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>54</td>
-                  <td>Benched</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.1</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>670</td>
-                  <td>Whitney</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>241</td>
-                  <td>Blindspotting 2</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.9</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Blindspotting</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.8</span>
-                  </td>
-                </tr>
-              </table>
+              <div class="table-responsive">
+                <table class="table">
+                  <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>category</th>
+                    <th>rating</th>
+                  </tr>
+                  <tr>
+                    <td>321</td>
+                    <td>I Dream in Another Language</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54</td>
+                    <td>Benched</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>670</td>
+                    <td>Whitney</td>
+                    <td>Top movies</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>242</td>
+                    <td>Blindspotting 2</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>8.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Blindspotting</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>5.2</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="box col-xl-6 mb-4">
-          <div class="table-stats">
-            <div class="info-stats">
-              <div
-                class="all-info-stats d-flex align-items-center justify-content-between"
-              >
-                <div class="text d-flex align-items-center">
-                  <i class="fas fa-th-large"></i>
-                  <h5>latest items</h5>
-                </div>
-                <div class="icon d-flex align-items-center">
-                  <i class="fa-solid fa-arrow-rotate-right"></i>
-                  <a href="#">view all</a>
+          <div class="items col-12 col-lg-6">
+            <div class="items-padding">
+              <div class="box-info">
+                <div
+                  class="col d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <span>top items</span>
+                  </div>
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href="#">view all</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="account-table">
-              <table>
-                <tr>
-                  <th>id</th>
-                  <th>title</th>
-                  <th>category</th>
-                  <th>rating</th>
-                </tr>
-                <tr>
-                  <td>321</td>
-                  <td>I Dream in Another Language</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.2</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>54</td>
-                  <td>Benched</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.1</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>670</td>
-                  <td>Whitney</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>241</td>
-                  <td>Blindspotting 2</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.9</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Blindspotting</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.8</span>
-                  </td>
-                </tr>
-              </table>
+              <div class="table-responsive">
+                <table class="table">
+                  <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>category</th>
+                    <th>rating</th>
+                  </tr>
+                  <tr>
+                    <td>321</td>
+                    <td>I Dream in Another Language</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54</td>
+                    <td>Benched</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>670</td>
+                    <td>Whitney</td>
+                    <td>Top movies</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>242</td>
+                    <td>Blindspotting 2</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>8.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Blindspotting</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>5.2</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="box col-xl-6 mb-4">
-          <div class="table-stats">
-            <div class="info-stats">
-              <div
-                class="all-info-stats d-flex align-items-center justify-content-between"
-              >
-                <div class="text d-flex align-items-center">
-                  <i class="far fa-comment-dots"></i>
-                  <h5>top comment</h5>
-                </div>
-                <div class="icon d-flex align-items-center">
-                  <i class="fa-solid fa-arrow-rotate-right"></i>
-                  <a href="#">view all</a>
+          <div class="items col-12 col-lg-6">
+            <div class="items-padding">
+              <div class="box-info">
+                <div
+                  class="col d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <span>top items</span>
+                  </div>
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href="#">view all</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="account-table">
-              <table>
-                <tr>
-                  <th>id</th>
-                  <th>title</th>
-                  <th>category</th>
-                  <th>rating</th>
-                </tr>
-                <tr>
-                  <td>321</td>
-                  <td>I Dream in Another Language</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.2</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>54</td>
-                  <td>Benched</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.1</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>670</td>
-                  <td>Whitney</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>241</td>
-                  <td>Blindspotting 2</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.9</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Blindspotting</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.8</span>
-                  </td>
-                </tr>
-              </table>
+              <div class="table-responsive">
+                <table class="table">
+                  <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>category</th>
+                    <th>rating</th>
+                  </tr>
+                  <tr>
+                    <td>321</td>
+                    <td>I Dream in Another Language</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54</td>
+                    <td>Benched</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>670</td>
+                    <td>Whitney</td>
+                    <td>Top movies</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>242</td>
+                    <td>Blindspotting 2</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>8.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Blindspotting</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>5.2</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="box col-xl-6 mb-4">
-          <div class="table-stats">
-            <div class="info-stats">
-              <div
-                class="all-info-stats d-flex align-items-center justify-content-between"
-              >
-                <div class="text d-flex align-items-center">
-                  <i class="far fa-star"></i>
-                  <h5>latest review</h5>
-                </div>
-                <div class="icon d-flex align-items-center">
-                  <i class="fa-solid fa-arrow-rotate-right"></i>
-                  <a href="#">view all</a>
+          <div class="items col-12 col-lg-6">
+            <div class="items-padding">
+              <div class="box-info">
+                <div
+                  class="col d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <span>top items</span>
+                  </div>
+                  <div
+                    class="info d-flex justify-content-between align-items-center"
+                  >
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href="#">view all</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="account-table">
-              <table>
-                <tr>
-                  <th>id</th>
-                  <th>title</th>
-                  <th>category</th>
-                  <th>rating</th>
-                </tr>
-                <tr>
-                  <td>321</td>
-                  <td>I Dream in Another Language</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.2</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>54</td>
-                  <td>Benched</td>
-                  <td>Movie</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.1</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>670</td>
-                  <td>Whitney</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>9.0</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>241</td>
-                  <td>Blindspotting 2</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.9</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Blindspotting</td>
-                  <td>TV Show</td>
-                  <td>
-                    <i class="far fa-star"></i>
-                    <span>8.8</span>
-                  </td>
-                </tr>
-              </table>
+              <div class="table-responsive">
+                <table class="table">
+                  <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>category</th>
+                    <th>rating</th>
+                  </tr>
+                  <tr>
+                    <td>321</td>
+                    <td>I Dream in Another Language</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>54</td>
+                    <td>Benched</td>
+                    <td>Movie</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.1</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>670</td>
+                    <td>Whitney</td>
+                    <td>Top movies</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>9.0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>242</td>
+                    <td>Blindspotting 2</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>8.2</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>Blindspotting</td>
+                    <td>top show</td>
+                    <td>
+                      <i class="fa-regular fa-star"></i>
+                      <span>5.2</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>

@@ -120,6 +120,9 @@ body {
 /* Start Admin Page Section */
 .admin-page {
   padding: 0 50px;
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
   .add-items {
     padding: 20px 0;
     border-bottom: 1px solid #151f30;
@@ -165,7 +168,6 @@ body {
       background-color: #151f30;
       padding: 20px;
       border-radius: 15px;
-      height: 100px;
       p {
         font-size: 16px;
         font-weight: 500;
@@ -182,66 +184,63 @@ body {
         font-size: 18px;
       }
     }
-    .table-stats {
-      background-color: #151f30;
-      border-radius: 15px;
-      width: 100%;
-      overflow-x: auto;
-      .info-stats {
-        border-bottom: 1px solid rgb(47 128 237 / 10%);
-        .all-info-stats {
-          padding: 20px;
-          i {
-            margin-right: 10px;
-            font-size: 18px;
-            color: #2f80ed;
-            &.fa-arrow-rotate-right {
-              color: #ffffff;
-              font-size: 14px;
-              margin-right: 20px;
+  }
+  .box-table {
+    .row {
+      padding: 0;
+      .items {
+        padding: 20px;
+        .items-padding {
+          background-color: #151f30;
+          border-radius: 15px;
+          .box-info {
+            border-bottom: 1px solid rgb(47 128 237 / 10%);
+            .col {
+              padding: 15px 25px;
+              .info {
+                i {
+                  color: #2f80ed;
+                  margin-right: 10px;
+                  &.fa-rotate-right {
+                    margin-right: 15px;
+                    color: #ffffff;
+                    font-weight: 900;
+                  }
+                }
+                span {
+                  color: #ffffff;
+                  text-transform: capitalize;
+                  font-weight: 500;
+                  font-size: 14px;
+                }
+                a {
+                  background-color: #131720;
+                  color: #ffffff;
+                  transition: 0.3s;
+                  text-transform: capitalize;
+                  font-size: 12px;
+                  padding: 8px;
+                  border-radius: 50px;
+                  &:hover {
+                    color: #2f80ed;
+                  }
+                }
+              }
             }
           }
-          h5 {
-            font-weight: 500;
-            font-size: 16px;
-            text-transform: capitalize;
-          }
-          a {
+          table {
             color: #ffffff;
-            background-color: #131720;
-            padding: 8px;
-            border-radius: 50px;
-            font-size: 12px;
-            text-transform: capitalize;
-          }
-        }
-      }
-      .account-table {
-        padding: 20px;
-        width: 100%;
-        table {
-          width: 100%;
-          tr {
-            padding: 10px;
-            margin: 0 auto;
             th {
-              width: 20%;
-              font-size: 14px;
-              text-transform: uppercase;
-              font-weight: 400;
               border-bottom: 1px solid rgb(47 128 237 / 10%);
-              padding-bottom: 10px;
-              &:nth-child(2) {
-                width: 60%;
-              }
+              text-transform: uppercase;
+              font-weight: 500;
+              font-size: 12px;
+              color: #2f80ed;
             }
             td {
-              width: 20%;
-              padding: 8px 0 6px;
+              border-bottom: none;
               font-size: 14px;
-              &:nth-child(2) {
-                width: 60%;
-              }
+              text-transform: capitalize;
             }
           }
         }
