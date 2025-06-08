@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlixTV-Movies & TV Show</title>
+    <link rel="shortcut icon" href="image/Tv.png" type="image/x-icon" />
+    <!-- google Fonts Links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font AWesome Link -->
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <!-- File Css Link -->
+    <link rel="stylesheet" href="../../css/Flix.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <!-- Start SideBaaar Section -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header d-block p-0">
+        <div
+          class="offcanvas-logo d-flex justify-content-between align-items-center"
+        >
+          <div class="image">
+            <img src="../../image/logo.svg" alt="" />
+          </div>
+          <i
+            class="fas fa-times"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+        </div>
+      </div>
+      <div class="offcanvas-body p-0 d-flex flex-column">
+        <div class="offcanvas-information">
+          <div class="user-info">
+            <div
+              class="user-info-text d-flex justify-content-between align-items-center"
+            >
+              <div class="icon d-flex align-items-center">
+                <img src="../../image/user.svg" alt="" />
+                <div class="tex d-flex flex-column">
+                  <span>Admin</span>
+                  <span>khaled Essam</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+          </div>
+          <div class="page-list">
+            <div class="pages-list">
+              <ul>
+                <li>
+                  <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-table"></i>
+                    <span>gatalog</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-folder"></i>
+                    <span>pages</span>
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">add items</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Edit items</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Sign-pages/sign-in.html"
+                        >sign in</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Sign-pages/sign-up.html"
+                        >sign up</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Sign-pages/forget.html"
+                        >forget password</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../Sign-pages/Not_Found.html"
+                        >404 page</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <span>users</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span>comments</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-star"></i>
+                    <span>reviews</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                    <span>back to FlixTv</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-footer mt-auto">
+          <h6>© FlixTV.template, 2021.</h6>
+          <span class="d-flex align-items-center"
+            >Create by <span>Khaled Essam</span></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- End SideBaaar Section -->
+    <!-- Start Admin Page Section -->
+    <div class="admin-page">
+      <div class="add-items d-flex justify-content-between align-items-center">
+        <h2>dashboard</h2>
+        <div class="icon">
+          <a href="#" class="link-items me-3">add items</a>
+          <i
+            class="fa-solid fa-bars-staggered"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          ></i>
+        </div>
+      </div>
+      <div class="row pt-4 pb-4">
+        <div class="box col-md-6 col-xl-3">
+          <div class="stats d-flex justify-content-between">
+            <div class="items">
+              <p>Unique views this month</p>
+              <span>5 678</span>
+            </div>
+            <div class="icon mt-auto">
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box col-md-6 col-xl-3">
+          <div class="stats d-flex justify-content-between">
+            <div class="items">
+              <p>Items added this month</p>
+              <span>172</span>
+            </div>
+            <div class="icon mt-auto">
+              <i class="fas fa-th-large"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box col-md-6 col-xl-3">
+          <div class="stats d-flex justify-content-between">
+            <div class="items">
+              <p>New comments</p>
+              <span>2 573</span>
+            </div>
+            <div class="icon mt-auto">
+              <i class="far fa-comment-dots"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box col-md-6 col-xl-3">
+          <div class="stats d-flex justify-content-between">
+            <div class="items">
+              <p>New reviews</p>
+              <span>1 078</span>
+            </div>
+            <div class="icon mt-auto">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4 pb-4">
+        <div class="box col-xl-6 mb-4">
+          <div class="table-stats">
+            <div class="info-stats">
+              <div
+                class="all-info-stats d-flex align-items-center justify-content-between"
+              >
+                <div class="text d-flex align-items-center">
+                  <i class="fas fa-qrcode"></i>
+                  <h5>top rated</h5>
+                </div>
+                <div class="icon d-flex align-items-center">
+                  <i class="fa-solid fa-arrow-rotate-right"></i>
+                  <a href="#">view all</a>
+                </div>
+              </div>
+            </div>
+            <div class="account-table">
+              <table>
+                <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>category</th>
+                  <th>rating</th>
+                </tr>
+                <tr>
+                  <td>321</td>
+                  <td>I Dream in Another Language</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td>Benched</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.1</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>670</td>
+                  <td>Whitney</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>241</td>
+                  <td>Blindspotting 2</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.9</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Blindspotting</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.8</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="box col-xl-6 mb-4">
+          <div class="table-stats">
+            <div class="info-stats">
+              <div
+                class="all-info-stats d-flex align-items-center justify-content-between"
+              >
+                <div class="text d-flex align-items-center">
+                  <i class="fas fa-th-large"></i>
+                  <h5>latest items</h5>
+                </div>
+                <div class="icon d-flex align-items-center">
+                  <i class="fa-solid fa-arrow-rotate-right"></i>
+                  <a href="#">view all</a>
+                </div>
+              </div>
+            </div>
+            <div class="account-table">
+              <table>
+                <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>category</th>
+                  <th>rating</th>
+                </tr>
+                <tr>
+                  <td>321</td>
+                  <td>I Dream in Another Language</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td>Benched</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.1</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>670</td>
+                  <td>Whitney</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>241</td>
+                  <td>Blindspotting 2</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.9</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Blindspotting</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.8</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="box col-xl-6 mb-4">
+          <div class="table-stats">
+            <div class="info-stats">
+              <div
+                class="all-info-stats d-flex align-items-center justify-content-between"
+              >
+                <div class="text d-flex align-items-center">
+                  <i class="far fa-comment-dots"></i>
+                  <h5>top comment</h5>
+                </div>
+                <div class="icon d-flex align-items-center">
+                  <i class="fa-solid fa-arrow-rotate-right"></i>
+                  <a href="#">view all</a>
+                </div>
+              </div>
+            </div>
+            <div class="account-table">
+              <table>
+                <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>category</th>
+                  <th>rating</th>
+                </tr>
+                <tr>
+                  <td>321</td>
+                  <td>I Dream in Another Language</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td>Benched</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.1</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>670</td>
+                  <td>Whitney</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>241</td>
+                  <td>Blindspotting 2</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.9</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Blindspotting</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.8</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="box col-xl-6 mb-4">
+          <div class="table-stats">
+            <div class="info-stats">
+              <div
+                class="all-info-stats d-flex align-items-center justify-content-between"
+              >
+                <div class="text d-flex align-items-center">
+                  <i class="far fa-star"></i>
+                  <h5>latest review</h5>
+                </div>
+                <div class="icon d-flex align-items-center">
+                  <i class="fa-solid fa-arrow-rotate-right"></i>
+                  <a href="#">view all</a>
+                </div>
+              </div>
+            </div>
+            <div class="account-table">
+              <table>
+                <tr>
+                  <th>id</th>
+                  <th>title</th>
+                  <th>category</th>
+                  <th>rating</th>
+                </tr>
+                <tr>
+                  <td>321</td>
+                  <td>I Dream in Another Language</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.2</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>54</td>
+                  <td>Benched</td>
+                  <td>Movie</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.1</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>670</td>
+                  <td>Whitney</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>9.0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>241</td>
+                  <td>Blindspotting 2</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.9</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Blindspotting</td>
+                  <td>TV Show</td>
+                  <td>
+                    <i class="far fa-star"></i>
+                    <span>8.8</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Admin Pag Section -->
+    <!-- Cdn File Bootstraaap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
