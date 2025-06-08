@@ -252,10 +252,6 @@ body {
         font-size: 14px;
         text-transform: capitalize;
         width: 10%;
-        &:nth-child(2),
-        &:last-child {
-          width: 20%;
-        }
       }
       td {
         padding: 20px 10px;
@@ -263,9 +259,16 @@ body {
         font-size: 14px;
         text-transform: capitalize;
         width: 10%;
-        &:nth-child(2),
-        &:last-child {
-          width: 20%;
+        .icon {
+          img {
+            width: 30px;
+            margin-right: 8px;
+            border-radius: 13px;
+          }
+          span {
+            font-size: 12px;
+            margin-bottom: 0;
+          }
         }
         i {
           color: #2f80ed;
