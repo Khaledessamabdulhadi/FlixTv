@@ -228,11 +228,12 @@ body {
 }
 .catalog-table {
   padding: 20px;
-  width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
   table {
     width: 100%;
-    overflow-x: auto;
+    @media (max-width: 1200px) {
+      width: 130%;
+    }
     tr {
       background-color: #151f30;
       border-radius: 50px;
@@ -241,14 +242,13 @@ body {
         padding: 25px 10px;
         font-size: 14px;
         text-transform: capitalize;
-        min-width: 100px;
       }
       td {
         padding: 20px 10px;
         border-bottom: 10px solid #131720;
         font-size: 14px;
         text-transform: capitalize;
-        min-width: 100px;
+
         i {
           color: #2f80ed;
           margin-right: 5px;
