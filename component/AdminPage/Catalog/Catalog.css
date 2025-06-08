@@ -232,7 +232,16 @@ body {
   table {
     width: 100%;
     @media (max-width: 1200px) {
-      width: 130%;
+      width: 110%;
+    }
+    @media (max-width: 991px) {
+      width: 150%;
+    }
+    @media (max-width: 767px) {
+      width: 180%;
+    }
+    @media (max-width: 580px) {
+      width: 250%;
     }
     tr {
       background-color: #151f30;
