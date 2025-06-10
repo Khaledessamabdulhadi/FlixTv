@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FlixTV-Movies & TV Show</title>
     <!-- google Fonts Links  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,25 +17,524 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- Link Swiper JS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Font AWesome Link -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/Flix.css" />
   </head>
   <body>
-    <div class="d-flex flex-column">
-      <a href="./component/Sign-pages/sign-in.html">sign-in</a>
-      <a href="./component/Sign-pages/sign-up.html">sign-up</a>
-      <a href="./component/Sign-pages/forget.html">forgett password</a>
-      <a href="./component/Sign-pages/Not_Found.html">Not Found</a>
-      <a href="./component/AdminPage/Dashboard/Dashboard.html">Dashboard</a>
-      <a href="./component/AdminPage/Catalog/Catalog.html">gatalog</a>
-      <a href="./component/AdminPage/reviews/reviews.html">reviews</a>
-      <a href="./component/AdminPage/comments/comment.html">comment</a>
-      <a href="./component/AdminPage/User/User.html">user</a>
-      <a href="./component/AdminPage/Pages/EditUser/edituser.html">edituser</a>
-      <a href="./component/AdminPage/Pages/Additems/additems.html">additems</a>
+    <!-- Start Header Section  -->
+    <div class="header">
+      <div
+        class="container d-flex justify-content-between align-items-center p-4"
+      >
+        <div class="offcanvas-image d-flex align-items-center">
+          <div class="offcanva d-lg-none me-3">
+            <a
+              href="#"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+              ><i class="fas fa-signal"></i
+            ></a>
+            <div
+              class="offcanvas offcanvas-top"
+              tabindex="-1"
+              id="offcanvasTop"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="top-header">
+                <div class="links">
+                  <ul
+                    class="d-flex align-items-start justify-content-start mb-0 flex-column"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="active"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >home</a
+                      >
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">home style 1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">home style 2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">home style 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="active"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        catalog
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">catalog</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">gatalog dropdown</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">category style 1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">category style 2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">details style 1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">details style 2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">details style 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">pricing plans</a></li>
+                    <li><a href="#" class="live">live</a></li>
+                    <li>
+                      <a
+                        href="#"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        ><i class="fas fa-ellipsis-h"></i
+                      ></a>
+                      <ul
+                        class="dropdown-menu scroll"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">about us</a></li>
+                        <li><a class="dropdown-item" href="#">profile</a></li>
+                        <li><a class="dropdown-item" href="#">contacts</a></li>
+                        <li><a class="dropdown-item" href="#">interviw</a></li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/component/AdminPage/Dashboard/Dashboard.html"
+                            >adminpage</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">privcy policy</a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/sign-in.html"
+                            >sign in</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/sign-up.html"
+                            >sign up</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/forget.html"
+                            >forget password</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/Not_Found.html"
+                            >not found</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="top-header-logo d-flex justify-content-between align-items-center pt-3 pb-3"
+                >
+                  <div class="left-logo d-flex align-items-center">
+                    <a href="#">
+                      <i
+                        class="fa-solid fa-xmark me-3 fs-5"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></i>
+                    </a>
+                    <div class="image">
+                      <img src="./image/logo.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="right-input d-flex align-items-center">
+                    <div class="input-sign-in d-flex align-items-center">
+                      <div class="input d-flex me-3 me-sm-5">
+                        <input
+                          type="text"
+                          class="d-none d-lg-block"
+                          placeholder="i'm looking for....."
+                        />
+                        <i class="fas fa-search"></i>
+                      </div>
+                      <a href="./component/Sign-pages/sign-in.html"
+                        >sign in <i class="fas fa-sign-out-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="./image/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="links d-none d-lg-block">
+          <ul class="d-flex align-items-center justify-content-center mb-0">
+            <li>
+              <a
+                href="#"
+                class="active"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >home</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">home style 1</a></li>
+                <li><a class="dropdown-item" href="#">home style 2</a></li>
+                <li><a class="dropdown-item" href="#">home style 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                catalog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">catalog</a></li>
+                <li><a class="dropdown-item" href="#">gatalog dropdown</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">category style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">category style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">details style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">details style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">details style 3</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">pricing plans</a></li>
+            <li><a href="#" class="live">live</a></li>
+            <li>
+              <a
+                href="#"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fas fa-ellipsis-h"></i
+              ></a>
+              <ul
+                class="dropdown-menu scroll"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li><a class="dropdown-item" href="#">about us</a></li>
+                <li><a class="dropdown-item" href="#">profile</a></li>
+                <li><a class="dropdown-item" href="#">contacts</a></li>
+                <li><a class="dropdown-item" href="#">interviw</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/component/AdminPage/Dashboard/Dashboard.html"
+                    >adminpage</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">privcy policy</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/sign-in.html"
+                    >sign in</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/sign-up.html"
+                    >sign up</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/forget.html"
+                    >forget password</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/Not_Found.html"
+                    >not found</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="input-sign-in d-flex align-items-center">
+          <div class="input d-flex me-3 me-sm-5">
+            <input
+              type="text"
+              class="d-none d-lg-block"
+              placeholder="i'm looking for....."
+            />
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="./component/Sign-pages/sign-in.html"
+            >sign in <i class="fas fa-sign-out-alt"></i
+          ></a>
+        </div>
+      </div>
     </div>
-    <!-- Cdn File Bootstraaap -->
+    <!-- ENd Header Section  -->
+    <!-- Start Swiper Js -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-1.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-2.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-2.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-3.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-4.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-5.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-6.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-7.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <div class="rating">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-info">
+            <img src="image/swiper-8.jpg" alt="" />
+            <div class="icons d-flex flex-column justify-content-center">
+              <div class="icons-info d-flex justify-content-between">
+                <i class="fa-solid fa-bookmark"></i>
+                <div class="rating">
+                  <i class="fa-regular fa-star"></i>
+                  <span>9.0</span>
+                </div>
+              </div>
+              <div class="text mt-auto">
+                <h3>money plane</h3>
+                <span>free</span>
+                <span>action</span>
+                <span>2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ENd Swiper Js -->
+    <!-- Cdn File Bootstraaap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -46,5 +545,35 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- link JS Swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
