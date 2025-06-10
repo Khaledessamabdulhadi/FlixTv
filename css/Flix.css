@@ -91,73 +91,98 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.image-info {
+.cart {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
-
+  padding: 15px;
+  &:hover button,
+  &:hover span,
+  &:hover .cart-title {
+    opacity: 1;
+    transform: scale(1);
+  }
   &:hover img {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
   &:hover h3 {
     color: #2f80ed;
   }
-  img {
-    max-width: 100%;
-    transition: 0.3s;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: rgb(0, 0, 0, 40%);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-  }
-  .icons {
-    position: absolute;
-    color: red;
-    width: 100%;
-    text-align: start;
-    height: 100%;
-    left: 0;
-    top: 0;
-    padding: 30px 20px 10px;
-    .icons-info {
-      .rating {
-        background-color: #131730;
-        padding: 5px 8px;
-        font-size: 12px;
-        border-radius: 5px;
-        transition: 0.3s;
-        i {
-          color: #2f80ed;
-        }
-        .fa-bookmark {
-          padding: 0px;
-        }
-        span {
-          color: #ffffff;
-          transition: 0.3s;
-        }
-      }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: (0, 0, 0);
+      left: 0;
+      top: 0;
+      z-index: 2;
+      transition: 0.3s;
     }
-    .text {
-      color: #ffffff;
+    img {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      transition: 0.3s;
+      overflow: hidden;
+    }
+  }
+  .cart-title {
+    position: absolute;
+    z-index: 3;
+    left: 30px;
+    top: 30px;
+    background-color: #151f30;
+    padding: 6px 5px;
+    border-radius: 5px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  span {
+    position: absolute;
+    z-index: 3;
+    right: 30px;
+    top: 30px;
+    background-color: #151f30;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: 0.3s;
+    i {
+      color: #2f80ed;
+      margin-right: 3px;
+    }
+  }
+  .text {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 20px;
+    z-index: 4;
+    h3 {
+      font-size: 16px;
       font-weight: 500;
-      text-transform: capitalize;
-      h3 {
-        margin-bottom: 5px;
-        font-size: 20px;
-        transition: 0.3s;
-      }
-      span {
+      margin-bottom: 5px;
+      transition: 0.3s;
+    }
+    ul {
+      li {
         font-size: 12px;
-        margin-right: 5px;
-        &:last-child {
-          margin-right: 0;
-        }
+        margin-right: 8px;
+        font-weight: 700;
+        text-transform: capitalize;
       }
     }
   }
