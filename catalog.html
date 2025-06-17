@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlixTV-Movies & TV Show</title>
+    <!-- google Fonts Links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Start Owl Carousel 2 Cdn -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- ENd Owl Carousel 2 Cdn -->
+    <!-- Link Swiper JS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Font AWesome Link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Flix.css" />
+  </head>
+  <body>
+    <!-- Start Header Section  -->
+    <div class="header">
+      <div
+        class="container d-flex justify-content-between align-items-center p-4"
+      >
+        <div class="offcanvas-image d-flex align-items-center">
+          <div class="offcanva d-lg-none me-3">
+            <a
+              href="#"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+              ><i class="fas fa-signal"></i
+            ></a>
+            <div
+              class="offcanvas offcanvas-top"
+              tabindex="-1"
+              id="offcanvasTop"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="top-header">
+                <div class="links">
+                  <ul
+                    class="d-flex align-items-start justify-content-start mb-0 flex-column"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="active"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >home</a
+                      >
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="./index.html"
+                            >home style 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./index.html"
+                            >home style 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./index.html"
+                            >home style 3</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="active"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        catalog
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="./catalog.html"
+                            >catalog</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">gatalog dropdown</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./category-style.html"
+                            >category style 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./category-style.html"
+                            >category style 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">details style 1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">details style 2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">details style 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">pricing plans</a></li>
+                    <li><a href="#" class="live">live</a></li>
+                    <li>
+                      <a
+                        href="./component/AdminPage/Dashboard/Dashboard.html"
+                        class="live"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        ><i class="fas fa-ellipsis-h"></i
+                      ></a>
+                      <ul
+                        class="dropdown-menu scroll"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">about us</a></li>
+                        <li><a class="dropdown-item" href="#">profile</a></li>
+                        <li><a class="dropdown-item" href="#">contacts</a></li>
+                        <li><a class="dropdown-item" href="#">interviw</a></li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/component/AdminPage/Dashboard/Dashboard.html"
+                            >adminpage</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">privcy policy</a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/sign-in.html"
+                            >sign in</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/sign-up.html"
+                            >sign up</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/forget.html"
+                            >forget password</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./component/Sign-pages/Not_Found.html"
+                            >not found</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="top-header-logo d-flex justify-content-between align-items-center pt-3 pb-3"
+                >
+                  <div class="left-logo d-flex align-items-center">
+                    <a href="#">
+                      <i
+                        class="fa-solid fa-xmark me-3 fs-5"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></i>
+                    </a>
+                    <div class="image">
+                      <img src="./image/logo.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="right-input d-flex align-items-center">
+                    <div class="input-sign-in d-flex align-items-center">
+                      <div class="input d-flex me-3 me-sm-5">
+                        <input
+                          type="text"
+                          class="d-none d-lg-block"
+                          placeholder="i'm looking for....."
+                        />
+                        <i class="fas fa-search"></i>
+                      </div>
+                      <a href="./component/Sign-pages/sign-in.html"
+                        >sign in <i class="fas fa-sign-out-alt"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="./image/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="links d-none d-lg-block">
+          <ul class="d-flex align-items-center justify-content-center mb-0">
+            <li>
+              <a
+                href="#"
+                class="active"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >home</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="./index.html">home style 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html">home style 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html">home style 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                catalog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="./catalog.html">catalog</a>
+                </li>
+                <li><a class="dropdown-item" href="#">gatalog dropdown</a></li>
+                <li>
+                  <a class="dropdown-item" href="./category-style.html"
+                    >category style 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./category-style.html"
+                    >category style 2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./details-movies.html"
+                    >details style 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./details-movies.html"
+                    >details style 2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./details-movies.html"
+                    >details style 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">pricing plans</a></li>
+            <li><a href="#" class="live">live</a></li>
+            <li>
+              <a
+                href="#"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fas fa-ellipsis-h"></i
+              ></a>
+              <ul
+                class="dropdown-menu scroll"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li><a class="dropdown-item" href="#">about us</a></li>
+                <li><a class="dropdown-item" href="#">profile</a></li>
+                <li><a class="dropdown-item" href="#">contacts</a></li>
+                <li><a class="dropdown-item" href="#">interviw</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/component/AdminPage/Dashboard/Dashboard.html"
+                    >adminpage</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">privcy policy</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/sign-in.html"
+                    >sign in</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/sign-up.html"
+                    >sign up</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/forget.html"
+                    >forget password</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./component/Sign-pages/Not_Found.html"
+                    >not found</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="input-sign-in d-flex align-items-center">
+          <div class="input d-flex me-3 me-sm-5">
+            <input
+              type="text"
+              class="d-none d-lg-block"
+              placeholder="i'm looking for....."
+            />
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="./component/Sign-pages/sign-in.html"
+            >sign in <i class="fas fa-sign-out-alt"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- ENd Header Section  -->
+    <!-- Start Catalog Section -->
+    <div class="catalog">
+      <div class="container">
+        <div
+          class="text d-flex justify-content-between align-items-center pt-4 pb-5"
+        >
+          <h2>catalog</h2>
+          <div class="info d-flex align-items-center">
+            <a href="#">home</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+            <a href="#">catalog</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-1.jpg" alt="" />
+                <h4>animals</h4>
+                <span>322</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-2.jpg" alt="" />
+                <h4>comdey</h4>
+                <span>174</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-3.jpg" alt="" />
+                <h4>horror</h4>
+                <span>767</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-4.jpg" alt="" />
+                <h4>drama</h4>
+                <span>222</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-5.jpg" alt="" />
+                <h4>cartoon</h4>
+                <span>870</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-6.jpg" alt="" />
+                <h4>fantastic</h4>
+                <span>119</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-7.jpg" alt="" />
+                <h4>drama</h4>
+                <span>675</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart-items col-6 col-sm-4 col-md-3">
+            <div class="cart-box">
+              <div class="info">
+                <img src="image/catalog-8.jpg" alt="" />
+                <h4>fantasy</h4>
+                <span>800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Catalog Section -->
+    <!-- Start Subscriptions Section -->
+    <div class="subscription">
+      <div class="container">
+        <div
+          class="sub-text d-flex justify-content-start align-items-center mb-5 text-capitalize"
+        >
+          <h2 class="fs-2">popular</h2>
+        </div>
+        <div id="popular" class="owl-carousel">
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/movies-1.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/2.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/3.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/4.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/5.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/6.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/7.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/8.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/13.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/3.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ENd Subscriptions Section -->
+    <!-- Start Subscriptions Section -->
+    <div class="subscription">
+      <div class="container">
+        <div
+          class="sub-text d-flex justify-content-start align-items-center mb-5 text-capitalize"
+        >
+          <h2 class="fs-2">newest movies</h2>
+        </div>
+        <div id="newest-movies" class="owl-carousel">
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/9.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/10.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/11.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/12.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/5.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/8.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/10.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/18.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/13.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/3.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ENd Subscriptions Section -->
+    <!-- Start Subscriptions Section -->
+    <div class="subscription">
+      <div class="container">
+        <div
+          class="sub-text d-flex justify-content-start align-items-center mb-5 text-capitalize"
+        >
+          <h2 class="fs-2">subscriptions</h2>
+        </div>
+        <div id="subscription" class="owl-carousel">
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/11.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/12.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/13.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/14.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/15.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/16.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/17.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/18.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/13.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+          <div class="cart-carousel d-flex flex-column">
+            <a href="./details-movies.html">
+              <img src="image/3.png" alt="" />
+              <i class="far fa-eye"></i>
+            </a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h3>Sports broadcasts</h3>
+            <span>More than 300 movies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ENd Subscriptions Section -->
+    <!-- Start Price-plan Section -->
+    <div class="price-plan">
+      <div class="container">
+        <div
+          class="plan-text d-flex justify-content-start flex-column mb-5 text-capitalize"
+        >
+          <h2 class="fs-2 mb-2">Select Your Plan</h2>
+          <p class="fs-7 fs-sm-6 mb-5">
+            No hidden fees, equipment rentals, or installation appointments.
+          </p>
+        </div>
+        <div class="price-boxes d-flex justify-content-between flex-wrap">
+          <div class="box-items order-2 order-lg-1 col-12 col-sm-6 col-lg-4">
+            <div class="items">
+              <h5>Regular</h5>
+              <ul>
+                <li><i class="fas fa-check"></i>FlixTV Originals</li>
+                <li>
+                  <i class="fas fa-check"></i>Switch plans or cancel anytime
+                </li>
+                <li><i class="fas fa-times"></i>Stream 65+ top Live</li>
+                <li><i class="fas fa-times"></i>TV channels</li>
+              </ul>
+              <p>15</p>
+              <button>select plan</button>
+            </div>
+          </div>
+          <div class="box-items order-1 order-lg-2 col-12 col-sm-12 col-lg-4">
+            <div class="items active">
+              <h5>Premium</h5>
+              <ul>
+                <li><i class="fas fa-check"></i>FlixTV Originals</li>
+                <li>
+                  <i class="fas fa-check"></i>Switch plans or cancel anytime
+                </li>
+                <li><i class="fas fa-check"></i>Stream 65+ top Live</li>
+                <li><i class="fas fa-times"></i>TV channels</li>
+              </ul>
+              <p>25</p>
+              <button>select plan</button>
+            </div>
+          </div>
+          <div class="box-items order-3 order-lg-3 col-12 col-sm-6 col-lg-4">
+            <div class="items">
+              <h5>Premium + TV channels</h5>
+              <ul>
+                <li><i class="fas fa-check"></i>FlixTV Originals</li>
+                <li>
+                  <i class="fas fa-check"></i>Switch plans or cancel anytime
+                </li>
+                <li><i class="fas fa-check"></i>Stream 65+ top Live</li>
+                <li><i class="fas fa-check"></i>TV channels</li>
+              </ul>
+              <p>45</p>
+              <button>select plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Price-plan Section -->
+    <!-- Start Footer Section  -->
+    <div class="footer">
+      <div
+        class="container d-flex justify-content-between flex-column flex-lg-row"
+      >
+        <div class="box order-2 order-lg-1 col-12 col-lg-4">
+          <div class="info">
+            <img src="image/logo.svg" alt="logo" />
+            <p>
+              Movies & TV Shows, Online cinema, Movie database HTML Template.
+            </p>
+            <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-tiktok"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="items d-flex justify-content-between flex-wrap order-1 order-lg-2 col-12 col-lg-8 mb-5 mb-lg-0"
+        >
+          <div class="box col-6 col-md-3">
+            <div class="info">
+              <h3>FlixTV</h3>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">my profile</a></li>
+                <li><a href="#">pricing plans</a></li>
+                <li><a href="#">contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box col-6 col-md-3">
+            <div class="info">
+              <h3>browsers</h3>
+              <ul>
+                <li><a href="#">live tv</a></li>
+                <li><a href="#">live news</a></li>
+                <li><a href="#">live sports</a></li>
+                <li><a href="#">sreaming library</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box col-6 col-md-3">
+            <div class="info">
+              <h3>movies</h3>
+              <ul>
+                <li><a href="#">tv shows</a></li>
+                <li><a href="#">movies</a></li>
+                <li><a href="#">kids</a></li>
+                <li><a href="#">collections</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box col-6 col-md-3">
+            <div class="info">
+              <h3>help</h3>
+              <ul>
+                <li><a href="#">Account & Billing</a></li>
+                <li><a href="#">Plans & Pricing</a></li>
+                <li><a href="#">Supported devices</a></li>
+                <li><a href="#">Accessibility</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer Section  -->
+    <!-- Start CopyRight Section -->
+    <div class="copyright">
+      <div
+        class="container d-flex justify-content-between align-items-center pt-3 pb-3 flex-column flex-sm-row"
+      >
+        <span class="d-flex align-items-center"
+          >© FlixTV.template, 2021. Created by
+          <p class="ms-2 fw-bold">Khaled Essam</p></span
+        >
+        <ul class="d-flex ms-auto flex-column flex-sm-row">
+          <li><a href="#">privcy policy</a></li>
+          <li><a href="#">terms and conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End CopyRight Section -->
+    <!-- Cdn File Bootstraaap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link Cdn JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- END link Cdn JQuery  -->
+    <!-- link JS Swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
