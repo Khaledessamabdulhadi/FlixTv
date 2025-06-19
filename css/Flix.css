@@ -1544,3 +1544,102 @@ body {
   }
 }
 /* ENd notification Section */
+/* Start About-Title Section */
+.about-title {
+  padding: 20px 0;
+  .text {
+    i {
+      font-size: 10px;
+    }
+    span {
+      font-size: 12px;
+      color: #ffffff;
+      text-transform: capitalize;
+      font-weight: 500;
+      transition: 0.3s;
+      &:hover {
+        color: #2f80ed;
+      }
+    }
+  }
+}
+/* End About-Title Section */
+/* Start paragraph Section */
+.paragraph {
+  padding: 20px 0;
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    span {
+      color: #2f80ed;
+    }
+  }
+}
+/* ENd paragraph Section */
+/* Start about-boxes Section */
+.about-boxes {
+  .about-info {
+    padding: 20px;
+    .about-cart {
+      background-color: #151f30;
+      padding: 30px;
+      border-radius: 10px;
+      span {
+        background-color: rgb(19, 23, 224, 20%);
+        padding: 8px 12px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #2f80ed;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+/* ENd about-boxes Section */
+/* Start Subscribe-Features Section */
+.subscribe {
+  padding: 30px 0;
+  .subscribe-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    @media (max-width: 580px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .number {
+      @media (max-width: 580px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      margin-bottom: 20px;
+      i {
+        color: #2f80ed;
+        font-size: 18px;
+        margin-right: 14px;
+        @media (max-width: 580px) {
+          margin-bottom: 20px;
+        }
+      }
+      h6 {
+        font-weight: 700;
+      }
+      p {
+        color: rgb(255, 255, 255, 10%);
+        font-size: 14px;
+      }
+    }
+  }
+}
+/* ENd Subscribe-Features Section */
